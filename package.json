@@ -1,0 +1,28 @@
+{
+  "name": "ciomanip",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Battledash-2/CIOManip.git"
+  },
+  "keywords": [
+    "io",
+    "console",
+    "manip",
+    "manipulation",
+    "c",
+    "c++",
+    "cpp"
+  ],
+  "author": "Battledash-2",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Battledash-2/CIOManip/issues"
+  },
+  "homepage": "https://github.com/Battledash-2/CIOManip#readme"
+}
