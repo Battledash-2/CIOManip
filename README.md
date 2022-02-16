@@ -60,7 +60,7 @@ std.out.alignRight('Hello world');
 
 ## Full example:
 ```js
-
+std.out.setwidth(16);
 std.out.center('-');
 std.out.write('Notes');
 // Table
