@@ -42,6 +42,10 @@ std.out.fillWith([
 ```js
 std.out.write('hello');
 ```
+#### Write with a newline
+```js
+std.out.writes('hello');
+```
 
 ### Writing a newline
 ```js
@@ -66,18 +70,24 @@ std.out.hex();
 std.out.write(0xA); // 0xA
 std.out.write(10); // 0xA
 ```
-#### Resetting
+#### Plain Mode
 ```js
 std.out.plain();
 std.out.write(0xA); // 10
 std.out.write(10); // 10
 ```
+### Reset all settings:
+```js
+std.out.reset();
+```
 
 ## Full example:
 ```js
+// Title
 std.out.setwidth(16);
 std.out.center('-');
 std.out.write('Notes');
+
 // Table
 std.out.fillWith([
 	['hello', 'world', 5],
@@ -88,4 +98,11 @@ std.out.fillWith([
 // Align
 std.out.alignRight('Hello');
 std.out.line();
+
+// console.log(std.in.read('Hello, '));
+
+std.out.reset();
+std.out.hex();
+
+std.out.writes(0x3A);
 ```

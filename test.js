@@ -17,3 +17,8 @@ std.out.alignRight('Hello');
 std.out.line();
 
 // console.log(std.in.read('Hello, '));
+
+std.out.reset();
+std.out.hex();
+
+std.out.writes(0x3A);
