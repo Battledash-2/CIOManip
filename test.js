@@ -59,3 +59,17 @@ std.leftRightTable(
 std.bin();
 std.writes(0xA); // 1010
 std.writes(10); // 1010
+
+// Tables
+std.reset();
+
+std.setwidth(53);
+std.center('-');
+std.write('Tables');
+
+std.writeTable([
+	['something', 'something else', 'idk'],
+	['heyzs', 'tables', 'ftw'],
+	['hey', 'tables', 'ftw'],
+	['something', 'something else', 'idk'],
+]);
