@@ -22,3 +22,9 @@ std.out.reset();
 std.out.hex();
 
 std.out.writes(0x3A);
+
+std.out.reset();
+
+std.out.setwidth(16);
+std.out.center('-');
+std.out.write('Test');
