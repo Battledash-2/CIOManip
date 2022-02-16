@@ -1,30 +1,61 @@
 const std = require('./lib/main');
 
 // Title
-std.out.setwidth(16);
-std.out.center('-');
-std.out.write('Notes');
+std.setwidth(16);
+std.center('-');
+std.write('Notes');
 
 // Table
-std.out.fillWith([
+std.fillWith([
 	['hello', 'world', 5],
-	['world', 'hello'],
+	['okays',  'hey',  5],
+	['world',    'hello'],
 	[5, 'world', 'hello'],
 ]);
 
 // Align
-std.out.alignRight('Hello');
-std.out.line();
+std.alignRight('Hello');
+std.line();
 
 // console.log(std.in.read('Hello, '));
 
-std.out.reset();
-std.out.hex();
+std.reset();
+std.hex();
 
-std.out.writes(0x3A);
+std.writes(0x3A);
 
-std.out.reset();
+std.reset();
 
-std.out.setwidth(16);
-std.out.center('-');
-std.out.write('Test');
+std.setwidth(18);
+std.center('-');
+std.write('Test!');
+
+// Custom table?
+std.setwidth(2);
+std.setfill('0');
+std.write(1);
+std.raw = ' ';
+std.write(5);
+std.raw = ' '.repeat(14-'CONST'.length);
+std.raw = 'CONST';
+std.line();
+
+// Left - right table
+std.setwidth(33);
+std.center('-');
+std.write('Left Right!');
+
+std.leftRightTable(
+	[ std.dir.hex(1), std.dir.hex(2) ],
+	[ 'CONST', 0, '("Hello!")' ],
+);
+
+std.setwidth(50);
+std.leftRightTable(
+	['Value1', 'Value2'],
+	['I\'m on the right!'],
+);
+
+std.bin();
+std.writes(0xA); // 1010
+std.writes(10); // 1010

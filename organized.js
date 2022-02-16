@@ -8,8 +8,7 @@
 const stdin = require('./stdin/stdin.js');
 const stdout = require('./stdout/stdout.js');
 
-const exp = { ...stdin, ...stdout };
-Object.defineProperties(exp, stdout.__assignments);
-delete stdout.__assignments;
-
-module.exports = exp;
+module.exports = {
+	out: stdout,
+	in: stdin,
+};
