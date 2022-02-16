@@ -59,6 +59,20 @@ std.out.setwidth(20);
 std.out.alignRight('Hello world');
 ```
 
+### Changing display mode:
+#### Hex Mode (displays 0x&lt;hex> rather than &lt;number>)
+```js
+std.out.hex();
+std.out.write(0xA); // 0xA
+std.out.write(10); // 0xA
+```
+#### Resetting
+```js
+std.out.plain();
+std.out.write(0xA); // 10
+std.out.write(10); // 10
+```
+
 ## Full example:
 ```js
 std.out.setwidth(16);
