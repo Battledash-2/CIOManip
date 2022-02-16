@@ -22,6 +22,7 @@ std.out.setwidth(16);
 ### Set state fill
 #### Setting the fill will check if the width is more than 0,<br/>if it is, it will use the width to fill in the text (1 -> 001)
 ```js
+std.out.setwidth(3);
 std.out.setfill('0');
 std.out.write('1'); // 001
 ```
