@@ -72,4 +72,11 @@ std.writeTable([
 	['heyzs', 'tables', 'ftw'],
 	['hey', 'tables', 'ftw'],
 	['something', 'something else', 'idk'],
-]);
+], 1);
+
+std.formatTable([
+	['something', 'something else', 'idk'],
+	['heyzs', 'tables', 'ftw'],
+	['hey', 'tables', 'ftw'],
+	['something', 'something else', 'idk'],
+], 1);

@@ -71,6 +71,22 @@ std.leftRightTable(
 	['I\'m on the right!'],
 );
 ```
+#### Normal Table:
+```js
+std.setwidth(51);
+std.writeTable([
+	['hello, world!', 'hey'],
+	['hello, world!', 'hey again']
+]);
+```
+#### Formatted Table:
+```js
+std.setwidth(51);
+std.formatTable([
+	['hello, world!', 'hey'],
+	['hello, world!', 'hey again']
+]);
+```
 
 ### Changing display mode:
 #### Hex Mode (displays 0x&lt;hex> rather than &lt;number>)
